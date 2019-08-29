@@ -1,4 +1,4 @@
-from setuptools import setup
+import setuptools
 import os
 
 HERE = os.path.abspath(os.path.dirname(__file__))
@@ -6,7 +6,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(HERE, "README.md")) as fid:
     README = fid.read()
 
-setup(name='mute_tf_warnings',
+setuptools.setup(name='mute_tf_warnings',
       version='0.1',
       description='a package for allocating tensorflow gpu memory use in python',
       url='https://github.com/kongkip/mute_tf_warnings',
@@ -15,5 +15,5 @@ setup(name='mute_tf_warnings',
       author='Evans Kiplagat',
       author_email='evanskiplagat3@gmail.com',
       license='MIT',
-      packages=["mute_tf_warnings"],
+      packages=setuptools.find_packages(),
       zip_safe=False)
