@@ -15,5 +15,5 @@ setup(name='mute_tf_warnings',
       author='Evans Kiplagat',
       author_email='evanskiplagat3@gmail.com',
       license='MIT',
-      # packages=["os"],
+      packages=["mute_tf_warnings"],
       zip_safe=False)
