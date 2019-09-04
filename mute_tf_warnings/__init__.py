@@ -7,7 +7,7 @@ def tf_mute_warning():
     """
     try:
 
-        tf.logging.set_verbosity(tf.logging.ERROR)
+        tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
     except ImportError:
